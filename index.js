@@ -15,8 +15,8 @@ document.getElementById("submitButton").onclick = function(){
             temp = temp + 273.15;
             print(temp);
         }
-        else{
-            noSelection()
+        else{            
+            print(temp);
         }
     }
     else if(document.getElementById("fromFahrenheit").checked){
@@ -32,8 +32,8 @@ document.getElementById("submitButton").onclick = function(){
             temp = (temp - 32) * 5/9 + 273.15;
             print(temp);
         }
-        else{
-            noSelection()
+        else{            
+            print(temp);
         }
     }
     else if(document.getElementById("fromKelvin").checked){
@@ -48,8 +48,8 @@ document.getElementById("submitButton").onclick = function(){
         else if(document.getElementById("toKelvin").checked){
             doofus(temp);
         }
-        else{
-            noSelection()
+        else{            
+            print(temp);
         }
     }
 }
@@ -72,8 +72,11 @@ function print(temp){
     else if(document.getElementById("toFahrenheit").checked){
         document.getElementById("tempLabel").innerHTML = temp + "°F";
     }
-    else{
+    else if(document.getElementById("toKelvin").checked){
         document.getElementById("tempLabel").innerHTML = temp + "°K";
+    }
+    else{
+        document.getElementById("tempLabel").innerHTML = "You need to choose both!"
     }
 }
 function getTemp(temp){
@@ -85,7 +88,4 @@ function toCelsius(temp){
 }
 function toFahrenheit(temp){
     return (temp - 273.15) * 9/5 + 32;
-}
-function noSelection(){
-    document.getElementById("tempLabel").innerHTML = "You need to choose both!"
 }
