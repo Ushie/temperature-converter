@@ -351,57 +351,57 @@ document.getElementById("submitButton").onclick = function(){
 
 function doofus(temp){
     if(document.getElementById("toCelsius").checked){
-        document.getElementById("tempLabel").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°C";
+        document.getElementById("result").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°C";
     }
     else if(document.getElementById("toFahrenheit").checked){
-        document.getElementById("tempLabel").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°F";
+        document.getElementById("result").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°F";
     }
     else if(document.getElementById("toKelvin").checked){
-        document.getElementById("tempLabel").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°K";
+        document.getElementById("result").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°K";
     }
     else if(document.getElementById("toRankine").checked){
-        document.getElementById("tempLabel").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°R";
+        document.getElementById("result").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°R";
     }
     else if(document.getElementById("toRomer").checked){
-        document.getElementById("tempLabel").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°Rø";
+        document.getElementById("result").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°Rø";
     }
     else if(document.getElementById("toReaumur").checked){
-        document.getElementById("tempLabel").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°Ré";
+        document.getElementById("result").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°Ré";
     }
     else if(document.getElementById("toNewton").checked){
-        document.getElementById("tempLabel").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°N";
+        document.getElementById("result").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°N";
     }
     else{
-        document.getElementById("tempLabel").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°D";
+        document.getElementById("result").innerHTML = "you doofus, i refuse to do that.... okay here it is anyways: " + temp + "°D";
     }
 }
 function print(temp){
     if(document.getElementById("toCelsius").checked){
-        document.getElementById("tempLabel").innerHTML = temp + "°C";
+        document.getElementById("result").innerHTML = temp + "°C";
     }
     else if(document.getElementById("toFahrenheit").checked){
-        document.getElementById("tempLabel").innerHTML = temp + "°F";
+        document.getElementById("result").innerHTML = temp + "°F";
     }
     else if(document.getElementById("toKelvin").checked){
-        document.getElementById("tempLabel").innerHTML = temp + "°K";
+        document.getElementById("result").innerHTML = temp + "°K";
     }
     else if(document.getElementById("toRankine").checked){
-        document.getElementById("tempLabel").innerHTML = temp + "°R";
+        document.getElementById("result").innerHTML = temp + "°R";
     }
     else if(document.getElementById("toRomer").checked){
-        document.getElementById("tempLabel").innerHTML = temp + "°Rø";
+        document.getElementById("result").innerHTML = temp + "°Rø";
     }
     else if(document.getElementById("toReaumur").checked){
-        document.getElementById("tempLabel").innerHTML = temp + "°Ré";
+        document.getElementById("result").innerHTML = temp + "°Ré";
     }
     else if(document.getElementById("toNewton").checked){
-        document.getElementById("tempLabel").innerHTML = temp + "°N";
+        document.getElementById("result").innerHTML = temp + "°N";
     }
     else if(document.getElementById("toDelisle").checked){
-        document.getElementById("tempLabel").innerHTML = temp + "°D";
+        document.getElementById("result").innerHTML = temp + "°D";
     }
     else{
-        document.getElementById("tempLabel").innerHTML = "You need to choose both!"
+        document.getElementById("result").innerHTML = "You need to choose both!"
     }
 }
 function getTemp(temp){
