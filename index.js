@@ -7,34 +7,35 @@ document.getElementById("submitButton").onclick = function(){
 
     switch(fromSelection){
         case 1:{
+            const toKelvin = temp = temp + 273.15;
             switch(toSelection){
                 case 1:
                     doofus(temp);
                     break;
                 case 2:
-                    temp = temp + 273.15;
+                    toKelvin;
                     temp = toFahrenheit(temp);
                     break;
                 case 3:
-                    temp = temp + 273.15;
+                    toKelvin;
                     break;
                 case 4:    
-                    temp = temp + 273.15;
+                    toKelvin;
                     temp = toRankine(temp);
                     break;
                 case 5: 
-                    temp = temp + 273.15;
+                    toKelvin;
                     temp = toRomer(temp);
                 case 6:
-                    temp = temp + 273.15;
+                    toKelvin;
                     temp = toReaumur(temp);
                     break;
                 case 7:
-                    temp = temp + 273.15;
+                    toKelvin;
                     temp = toNewton(temp);
                     break;
                 case 8:
-                    temp = temp + 273.15;
+                    toKelvin;
                     temp = toDelisle(temp);
                     break;
             }
@@ -44,35 +45,36 @@ document.getElementById("submitButton").onclick = function(){
         }
         break;
         case 2:{
+            const toKelvin = temp = (temp - 32) * 5/9 + 273.15;
             switch(toSelection){
                 case 1:
-                    temp = (temp - 32) * 5/9 + 273.15;
+                    toKelvin;
                     temp = toCelsius(temp);
                     break;
                 case 2:
                     doofus(temp);
                     break;
                 case 3:
-                    temp = (temp - 32) * 5/9 + 273.15;
+                    toKelvin;
                     break;
                 case 4:      
-                    temp = (temp - 32) * 5/9 + 273.15;
+                    toKelvin;
                     temp = toRankine(temp);
                     break;
                 case 5:
-                    temp = (temp - 32) * 5/9 + 273.15;
+                    toKelvin;
                     temp = toRomer(temp);
                     break;
                 case 6:
-                    temp = (temp - 32) * 5/9 + 273.15;
+                    toKelvin;
                     temp = toReaumur(temp);
                     break;
                 case 7:
-                    temp = (temp - 32) * 5/9 + 273.15;
+                    toKelvin;
                     temp = toNewton(temp);
                     break;
                 case 8:
-                    temp = (temp - 32) * 5/9 + 273.15;
+                    toKelvin;
                     temp = toDelisle(temp);
                     break;
             }
@@ -114,34 +116,35 @@ document.getElementById("submitButton").onclick = function(){
         }
         break;
         case 4:{
+            const toKelvin = temp = temp * 5/9;
             switch(toSelection){
                 case 1:
-                    temp = temp * 5/9;
+                    toKelvin;
                     temp = toCelsius(temp);
                     break;
                 case 2:
-                    temp = temp * 5/9;
+                    toKelvin;
                     temp = toFahrenheit(temp);
                     break;
                 case 3:
-                    temp = temp * 5/9;
+                    toKelvin;
                     break;
                 case 4:
                     doofus(temp);
                     break;
                 case 5:
-                    temp = temp * 5/9;
+                    toKelvin;
                     temp = toRomer(temp);
                 case 6:
-                    temp = temp * 5/9;
+                    toKelvin;
                     temp = toReaumur(temp);
                     break;
                 case 7:
-                    temp = temp * 5/9;
+                    toKelvin;
                     temp = toNewton(temp);
                     break;
                 case 8:
-                    temp = temp * 5/9;
+                    toKelvin;
                     temp = toDelisle(temp);
                     break;
             }
@@ -151,35 +154,36 @@ document.getElementById("submitButton").onclick = function(){
         }
         break;
         case 5:{
+            const toKelvin = temp = (temp - 7.5) / 0.52500 + 273.15;
             switch(toSelection){
                 case 1:
-                    temp = (temp - 7.5) / 0.52500 + 273.15;
+                    toKelvin;
                     temp = toCelsius(temp); 
                     break;
                 case 2:
-                    temp = (temp - 7.5) / 0.52500 + 273.15;
+                    toKelvin;
                     temp = toFahrenheit(temp); 
                     break;
                 case 3:
-                    temp = (temp - 7.5) / 0.52500 + 273.15;
+                    toKelvin;
                     break;
                 case 4:
-                    temp = (temp - 7.5) / 0.52500 + 273.15;
+                    toKelvin;
                     temp = toRankine(temp); 
                     break;
                 case 5:
                     doofus(temp);
                     break;
                 case 6:
-                    temp = (temp - 7.5) / 0.52500 + 273.15;
+                    toKelvin;
                     temp = toReaumur(temp); 
                     break;
                 case 7:
-                    temp = (temp - 7.5) / 0.52500 + 273.15;
+                    toKelvin;
                     temp = toNewton(temp); 
                     break;
                 case 8:
-                    temp = (temp - 7.5) / 0.52500 + 273.15;
+                    toKelvin;
                     temp = toDelisle(temp); 
                     break;
             }
@@ -189,35 +193,36 @@ document.getElementById("submitButton").onclick = function(){
         }
         break;
         case 6:{
+            const toKelvin = temp = temp * 4/5 + 273.15;
             switch(toSelection){
                 case 1:
-                    temp = temp * 4/5 + 273.15;
+                    toKelvin;
                     temp = toCelsius(temp); 
                     break;
                 case 2:
-                    temp = temp * 4/5 + 273.15;
+                    toKelvin;
                     temp = toFahrenheit(temp); 
                     break;
                 case 3:
-                    temp = temp * 4/5 + 273.15;
+                    toKelvin;
                     break;
                 case 4:
-                    temp = temp * 4/5 + 273.15;
+                    toKelvin;
                     temp = toRankine(temp); 
                     break;
                 case 5:
-                    temp = temp * 4/5 + 273.15;
+                    toKelvin;
                     temp = toRomer(temp);
                     break;
                 case 6:
                     doofus(temp);
                     break;
                 case 7:
-                    temp = temp * 4/5 + 273.15;
+                    toKelvin;
                     temp = toNewton(temp); 
                     break;
                 case 8:
-                    temp = temp * 4/5 + 273.15;
+                    toKelvin;
                     temp = toDelisle(temp); 
                     break;
             }
@@ -227,35 +232,36 @@ document.getElementById("submitButton").onclick = function(){
         }
         break;
         case 7:{
+            const toKelvin = temp = temp * 100/33 + 273.15;
             switch(toSelection){
                 case 1:
-                    temp = temp * 100/33 + 273.15;
+                    toKelvin;
                     temp = toCelsius(temp); 
                     break;
                 case 2:
-                    temp = temp * 100/33 + 273.15;
+                    toKelvin;
                     temp = toFahrenheit(temp); 
                     break;
                 case 3:
-                    temp = temp * 100/33 + 273.15;
+                    toKelvin;
                     break;
                 case 4:
-                    temp = temp * 100/33 + 273.15;
+                    toKelvin;
                     temp = toRankine(temp); 
                     break;
                 case 5:
-                    temp = temp * 100/33 + 273.15;
+                    toKelvin;
                     temp = toRomer(temp);
                     break;
                 case 6:
-                    temp = temp * 100/33 + 273.15;
+                    toKelvin;
                     temp = toReaumur(temp); 
                     break;
                 case 7:
                     doofus(temp);
                     break;
                 case 8:
-                    temp = temp * 100/33 + 273.15;
+                    toKelvin;
                     temp = toDelisle(temp); 
                     break;
             }
@@ -265,32 +271,33 @@ document.getElementById("submitButton").onclick = function(){
         }
         break;
         case 8:{
+            const toKelvin = temp = 373.15 - (temp * 2/3);
             switch(toSelection){
                 case 1:
-                    temp = 373.15 - (temp * 2/3);
+                    toKelvin;
                     temp = toCelsius(temp); 
                     break;
                 case 2:
-                    temp = 373.15 - (temp * 2/3);
+                    toKelvin;
                     temp = toFahrenheit(temp); 
                     break;
                 case 3:
-                    temp = 373.15 - (temp * 2/3);
+                    toKelvin;
                     break;
                 case 4:
-                    temp = 373.15 - (temp * 2/3);
+                    toKelvin;
                     temp = toRankine(temp); 
                     break;
                 case 5:
-                    temp = 373.15 - (temp * 2/3);
+                    toKelvin;
                     temp = toRomer(temp);
                     break;
                 case 6:
-                    temp = 373.15 - (temp * 2/3);
+                    toKelvin;
                     temp = toReaumur(temp); 
                     break;
                 case 7:
-                    temp = 373.15 - (temp * 2/3);
+                    toKelvin;
                     temp = toNewton(temp); 
                     break;
                 case 8:
