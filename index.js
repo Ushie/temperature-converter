@@ -5,397 +5,306 @@ document.getElementById("submitButton").onclick = function(){
     let selection = getSelection();
 
     if(document.getElementById("fromCelsius").checked){
-        switch(true){
-            case selection == 1:
+        switch(selection){
+            case 1:
                 doofus(temp);
                 break;
-            case selection == 2:
+            case 2:
                 temp = temp + 273.15;
-                temp = toFahrenheit(temp);
-                print(temp);
+                toFahrenheit(temp);
                 break;
-            case selection == 3:
+            case 3:
                 temp = temp + 273.15;
-                print(temp);
                 break;
-            case selection == 4:    
+            case 4:    
                 temp = temp + 273.15;
-                temp = toRankine(temp);
-                print(temp);
+                toRankine(temp);
                 break;
-            case selection == 5: 
+            case 5: 
                 temp = temp + 273.15;
-                temp = toRomer(temp);
-                print(temp);
-            case selection == 6:
+                toRomer(temp);
+            case 6:
                 temp = temp + 273.15;
-                temp = toReaumur(temp);
-                print(temp);
+                toReaumur(temp);
                 break;
-            case selection == 7:
+            case 7:
                 temp = temp + 273.15;
-                temp = toNewton(temp);
-                print(temp);
+                toNewton(temp);
                 break;
-            case selection == 8:
+            case 8:
                 temp = temp + 273.15;
-                temp = toDelisle(temp);
-                print(temp);
+                toDelisle(temp);
                 break;
-            default:  
-                print(temp);
-                break;
+        }
+        if(selection != 1){
+            print(temp, unit);
         }
     }
     else if(document.getElementById("fromFahrenheit").checked){
-        switch(true){
-            case selection == 1:
+        switch(selection){
+            case 1:
                 temp = (temp - 32) * 5/9 + 273.15;
-                temp = toCelsius(temp);
-                print(temp);
+                toCelsius(temp);
                 break;
-            case selection == 2:
+            case 2:
                 doofus(temp);
                 break;
-            case selection == 3:
+            case 3:
                 temp = (temp - 32) * 5/9 + 273.15;
-                print(temp);
                 break;
-            case selection == 4:      
+            case 4:      
                 temp = (temp - 32) * 5/9 + 273.15;
-                temp = toRankine(temp);
-                print(temp);
+                toRankine(temp);
                 break;
-            case selection == 5:
+            case 5:
                 temp = (temp - 32) * 5/9 + 273.15;
-                temp = toRomer(temp);
-                print(temp);
+                toRomer(temp);
                 break;
-            case selection == 6:
+            case 6:
                 temp = (temp - 32) * 5/9 + 273.15;
-                temp = toReaumur(temp);
-                print(temp);
+                toReaumur(temp);
                 break;
-            case selection == 7:
+            case 7:
                 temp = (temp - 32) * 5/9 + 273.15;
-                temp = toNewton(temp);
-                print(temp);
+                toNewton(temp);
                 break;
-            case selection == 8:
+            case 8:
                 temp = (temp - 32) * 5/9 + 273.15;
-                temp = toDelisle(temp);
-                print(temp);
+                toDelisle(temp);
                 break;
-            default:
-                print(temp);
+        }
+        if(selection != 2){
+            print(temp, unit);
         }
     }
     else if(document.getElementById("fromKelvin").checked){
-        switch(true){
-            case selection == 1:
-                temp = toCelsius(temp);
-                print(temp);
+        switch(selection){
+            case 1:
+                toCelsius(temp);
                 break;
-            case selection == 2:
-                temp = toFahrenheit(temp);
-                print(temp);
+            case 2:
+                toFahrenheit(temp);
                 break;
-            case selection == 3:
+            case 3:
                 doofus(temp);
                 break;
-            case selection == 4:
-                temp = toRankine(temp);
-                print(temp);
+            case 4:
+                toRankine(temp);
                 break;
-            case selection == 5:
-                temp = toRomer(temp);
-                print(temp);
+            case 5:
+                toRomer(temp);
                 break;
-            case selection == 6:
-                temp = toReaumur(temp);
-                print(temp);
+            case 6:
+                toReaumur(temp);
                 break;
-            case selection == 7:
-                temp = toNewton(temp);
-                print(temp);
+            case 7:
+                toNewton(temp);
                 break;
-            case selection == 8:
-                temp = toDelisle(temp);
-                print(temp);
+            case 8:
+                toDelisle(temp);
                 break;
-            default:
-                print(temp);
+        }
+        if(selection != 3){
+            print(temp, unit);
         }
     }
     else if(document.getElementById("fromRankine").checked){
-        switch(true){
-            case selection == 1:
+        switch(selection){
+            case 1:
                 temp = temp * 5/9;
-                temp = toCelsius(temp);
-                print(temp);
+                toCelsius(temp);
                 break;
-            case selection == 2:
+            case 2:
                 temp = temp * 5/9;
-                temp = toFahrenheit(temp);
-                print(temp);
+                toFahrenheit(temp);
                 break;
-            case selection == 3:
+            case 3:
                 temp = temp * 5/9;
-                print(temp);
                 break;
-            case selection == 4:
+            case 4:
                 doofus(temp);
                 break;
-            case selection == 5:
+            case 5:
                 temp = temp * 5/9;
-                temp = toRomer(temp);
-                print(temp);
-            case selection == 6:
+                toRomer(temp);
+            case 6:
                 temp = temp * 5/9;
-                temp = toReaumur(temp);
-                print(temp);
+                toReaumur(temp);
                 break;
-            case selection == 7:
+            case 7:
                 temp = temp * 5/9;
-                temp = toNewton(temp);
-                print(temp);
+                toNewton(temp);
                 break;
-            case selection == 8:
+            case 8:
                 temp = temp * 5/9;
-                temp = toDelisle(temp);
-                print(temp);
+                toDelisle(temp);
                 break;
-            default:
-                print(temp);
+        }
+        if(selection != 4){
+            print(temp, unit);
         }
     }
     else if(document.getElementById("fromRomer").checked){
-        switch(true){
-            case selection == 1:
+        switch(selection){
+            case 1:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                temp = toCelsius(temp); 
-                print(temp);
+                toCelsius(temp); 
                 break;
-            case selection == 2:
+            case 2:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                temp = toFahrenheit(temp); 
-                print(temp);
+                toFahrenheit(temp); 
                 break;
-            case selection == 3:
+            case 3:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                print(temp);
                 break;
-            case selection == 4:
+            case 4:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                temp = toRankine(temp); 
-                print(temp);
+                toRankine(temp); 
                 break;
-            case selection == 5:
+            case 5:
                 doofus(temp);
                 break;
-            case selection == 6:
+            case 6:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                temp = toReaumur(temp); 
-                print(temp);
+                toReaumur(temp); 
                 break;
-            case selection == 7:
+            case 7:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                temp = toNewton(temp); 
-                print(temp);
+                toNewton(temp); 
                 break;
-            case selection == 8:
+            case 8:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                temp = toDelisle(temp); 
-                print(temp);
+                toDelisle(temp); 
                 break;
-            default:
-                print(temp);
+        }
+        if(selection != 5){
+            print(temp, unit);
         }
     }
     else if(document.getElementById("fromReaumur").checked){
-        switch(true){
-            case selection == 1:
+        switch(selection){
+            case 1:
                 temp = temp * 4/5 + 273.15;
-                temp = toCelsius(temp); 
-                print(temp);
+                toCelsius(temp); 
                 break;
-            case selection == 2:
+            case 2:
                 temp = temp * 4/5 + 273.15;
-                temp = toFahrenheit(temp); 
-                print(temp);
+                toFahrenheit(temp); 
                 break;
-            case selection == 3:
+            case 3:
                 temp = temp * 4/5 + 273.15;
-                print(temp);
                 break;
-            case selection == 4:
+            case 4:
                 temp = temp * 4/5 + 273.15;
-                temp = toRankine(temp); 
-                print(temp);
+                toRankine(temp); 
                 break;
-            case selection == 5:
+            case 5:
                 temp = temp * 4/5 + 273.15;
-                temp = toRomer(temp);
-                print(temp);
+                toRomer(temp);
                 break;
-            case selection == 6:
+            case 6:
                 doofus(temp);
                 break;
-            case selection == 7:
+            case 7:
                 temp = temp * 4/5 + 273.15;
-                temp = toNewton(temp); 
-                print(temp);
+                toNewton(temp); 
                 break;
-            case selection == 8:
+            case 8:
                 temp = temp * 4/5 + 273.15;
-                temp = toDelisle(temp); 
-                print(temp);
+                toDelisle(temp); 
                 break;
-            default:
-                print(temp);
+        }
+        if(selection != 6){
+            print(temp, unit);
         }
     }
     else if(document.getElementById("fromNewton").checked){
-        switch(true){
-            case selection == 1:
+        switch(selection){
+            case 1:
                 temp = temp * 100/33 + 273.15;
-                temp = toCelsius(temp); 
-                print(temp);
+                toCelsius(temp); 
                 break;
-            case selection == 2:
+            case 2:
                 temp = temp * 100/33 + 273.15;
-                temp = toFahrenheit(temp); 
-                print(temp);
+                toFahrenheit(temp); 
                 break;
-            case selection == 3:
+            case 3:
                 temp = temp * 100/33 + 273.15;
-                print(temp);
                 break;
-            case selection == 4:
+            case 4:
                 temp = temp * 100/33 + 273.15;
-                temp = toRankine(temp); 
-                print(temp);
+                toRankine(temp); 
                 break;
-            case selection == 5:
+            case 5:
                 temp = temp * 100/33 + 273.15;
-                temp = toRomer(temp);
-                print(temp);
+                toRomer(temp);
                 break;
-            case selection == 6:
+            case 6:
                 temp = temp * 100/33 + 273.15;
-                temp = toReaumur(temp); 
-                print(temp);
+                toReaumur(temp); 
                 break;
-            case selection == 7:
+            case 7:
                 doofus(temp);
                 break;
-            case selection == 8:
+            case 8:
                 temp = temp * 100/33 + 273.15;
-                temp = toDelisle(temp); 
-                print(temp);
+                toDelisle(temp); 
                 break;
-            default:
-                print(temp);
+        }
+        if(selection != 7){
+            print(temp, unit);
         }
     }
     else if(document.getElementById("fromDelisle").checked){
-        switch(true){
-            case selection == 1:
+        switch(selection){
+            case 1:
                 temp = 373.15 - (temp * 2/3);
-                temp = toCelsius(temp); 
-                print(temp);
+                toCelsius(temp); 
                 break;
-            case selection == 2:
+            case 2:
                 temp = 373.15 - (temp * 2/3);
-                temp = toFahrenheit(temp); 
-                print(temp);
+                toFahrenheit(temp); 
                 break;
-            case selection == 3:
+            case 3:
                 temp = 373.15 - (temp * 2/3);
-                print(temp);
                 break;
-            case selection == 4:
+            case 4:
                 temp = 373.15 - (temp * 2/3);
-                temp = toRankine(temp); 
-                print(temp);
+                toRankine(temp); 
                 break;
-            case selection == 5:
+            case 5:
                 temp = 373.15 - (temp * 2/3);
-                temp = toRomer(temp);
-                print(temp);
+                toRomer(temp);
                 break;
-            case selection == 6:
+            case 6:
                 temp = 373.15 - (temp * 2/3);
                 temp = toReaumur(temp); 
-                print(temp);
                 break;
-            case selection == 7:
+            case 7:
                 temp = 373.15 - (temp * 2/3);
-                temp = toNewton(temp); 
-                print(temp);
+                toNewton(temp); 
                 break;
-            case selection == 8:
+            case 8:
                 doofus(temp);
                 break;
-            default:
-                print(temp);
+        }
+        if(selection != 8){
+            print(temp, unit);
         }
     }
 }
 
 function doofus(temp){
-    if(document.getElementById("toCelsius").checked){
-        document.getElementById("result").innerHTML = `you doofus, i refuse to do that.... okay here it is anyways: ${temp} °C`;
-    }
-    else if(document.getElementById("toFahrenheit").checked){
-        document.getElementById("result").innerHTML = `you doofus, i refuse to do that.... okay here it is anyways: ${temp} °F`;
-    }
-    else if(document.getElementById("toKelvin").checked){
-        document.getElementById("result").innerHTML = `you doofus, i refuse to do that.... okay here it is anyways: ${temp} °K`;
-    }
-    else if(document.getElementById("toRankine").checked){
-        document.getElementById("result").innerHTML = `you doofus, i refuse to do that.... okay here it is anyways: ${temp} °R`;
-    }
-    else if(document.getElementById("toRomer").checked){
-        document.getElementById("result").innerHTML = `you doofus, i refuse to do that.... okay here it is anyways: ${temp} °Rø`;
-    }
-    else if(document.getElementById("toReaumur").checked){
-        document.getElementById("result").innerHTML = `you doofus, i refuse to do that.... okay here it is anyways: ${temp} °Ré`;
-    }
-    else if(document.getElementById("toNewton").checked){
-        document.getElementById("result").innerHTML = `you doofus, i refuse to do that.... okay here it is anyways: ${temp} °N`;
-    }
-    else{
-        document.getElementById("result").innerHTML = `you doofus, i refuse to do that.... okay here it is anyways: ${temp} °D`;
-    }
+    document.getElementById("result").innerHTML = `you doofus, i refuse to do that.... okay here it is anyways: ${temp}°${unit}`;
 }
-function print(temp){
-    if(document.getElementById("toCelsius").checked){
-        document.getElementById("result").innerHTML = temp + "°C";
-    }
-    else if(document.getElementById("toFahrenheit").checked){
-        document.getElementById("result").innerHTML = temp + "°F";
-    }
-    else if(document.getElementById("toKelvin").checked){
-        document.getElementById("result").innerHTML = temp + "°K";
-    }
-    else if(document.getElementById("toRankine").checked){
-        document.getElementById("result").innerHTML = temp + "°R";
-    }
-    else if(document.getElementById("toRomer").checked){
-        document.getElementById("result").innerHTML = temp + "°Rø";
-    }
-    else if(document.getElementById("toReaumur").checked){
-        document.getElementById("result").innerHTML = temp + "°Ré";
-    }
-    else if(document.getElementById("toNewton").checked){
-        document.getElementById("result").innerHTML = temp + "°N";
-    }
-    else if(document.getElementById("toDelisle").checked){
-        document.getElementById("result").innerHTML = temp + "°D";
-    }
-    else{
-        document.getElementById("result").innerHTML = "You need to choose both!"
+function print(temp, unit, selection){
+    switch(selection){
+        case 0:
+            document.getElementById("result").innerHTML = "You need to choose both!"
+            break;
+        default:
+            document.getElementById("result").innerHTML = temp + `°${unit}`;
+            break;
     }
 }
 function getTemp(temp){
@@ -404,27 +313,35 @@ function getTemp(temp){
 }
 function getSelection(selection){
     if(document.getElementById("toCelsius").checked){
+        unit = "C";
         selection = 1;
     }
     else if(document.getElementById("toFahrenheit").checked){
+        unit = "F";
         selection = 2;
     }
     else if(document.getElementById("toKelvin").checked){
+        unit = "K";
         selection = 3;
     }
     else if(document.getElementById("toRankine").checked){
+        unit = "R";
         selection = 4;
     }
     else if(document.getElementById("toRomer").checked){
+        unit = "Rø";
         selection = 5;
     }
     else if(document.getElementById("toReaumur").checked){
+        unit = "Ré";
         selection = 6;
     }
     else if(document.getElementById("toNewton").checked){
+        unit = "N";
         selection = 7;
     }
     else{
+        unit = "D";
         selection = 8;
     }
     return Number(selection);
