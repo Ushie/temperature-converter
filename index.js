@@ -11,29 +11,29 @@ document.getElementById("submitButton").onclick = function(){
                 break;
             case 2:
                 temp = temp + 273.15;
-                toFahrenheit(temp);
+                temp = toFahrenheit(temp);
                 break;
             case 3:
                 temp = temp + 273.15;
                 break;
             case 4:    
                 temp = temp + 273.15;
-                toRankine(temp);
+                temp = toRankine(temp);
                 break;
             case 5: 
                 temp = temp + 273.15;
-                toRomer(temp);
+                temp = toRomer(temp);
             case 6:
                 temp = temp + 273.15;
-                toReaumur(temp);
+                temp = toReaumur(temp);
                 break;
             case 7:
                 temp = temp + 273.15;
-                toNewton(temp);
+                temp = toNewton(temp);
                 break;
             case 8:
                 temp = temp + 273.15;
-                toDelisle(temp);
+                temp = toDelisle(temp);
                 break;
         }
         if(selection != 1){
@@ -44,7 +44,7 @@ document.getElementById("submitButton").onclick = function(){
         switch(selection){
             case 1:
                 temp = (temp - 32) * 5/9 + 273.15;
-                toCelsius(temp);
+                temp = toCelsius(temp);
                 break;
             case 2:
                 doofus(temp);
@@ -54,23 +54,23 @@ document.getElementById("submitButton").onclick = function(){
                 break;
             case 4:      
                 temp = (temp - 32) * 5/9 + 273.15;
-                toRankine(temp);
+                temp = toRankine(temp);
                 break;
             case 5:
                 temp = (temp - 32) * 5/9 + 273.15;
-                toRomer(temp);
+                temp = toRomer(temp);
                 break;
             case 6:
                 temp = (temp - 32) * 5/9 + 273.15;
-                toReaumur(temp);
+                temp = toReaumur(temp);
                 break;
             case 7:
                 temp = (temp - 32) * 5/9 + 273.15;
-                toNewton(temp);
+                temp = toNewton(temp);
                 break;
             case 8:
                 temp = (temp - 32) * 5/9 + 273.15;
-                toDelisle(temp);
+                temp = toDelisle(temp);
                 break;
         }
         if(selection != 2){
@@ -80,28 +80,28 @@ document.getElementById("submitButton").onclick = function(){
     else if(document.getElementById("fromKelvin").checked){
         switch(selection){
             case 1:
-                toCelsius(temp);
+                temp = toCelsius(temp);
                 break;
             case 2:
-                toFahrenheit(temp);
+                temp = toFahrenheit(temp);
                 break;
             case 3:
                 doofus(temp);
                 break;
             case 4:
-                toRankine(temp);
+                temp = toRankine(temp);
                 break;
             case 5:
-                toRomer(temp);
+                temp = toRomer(temp);
                 break;
             case 6:
-                toReaumur(temp);
+                temp = toReaumur(temp);
                 break;
             case 7:
-                toNewton(temp);
+                temp = toNewton(temp);
                 break;
             case 8:
-                toDelisle(temp);
+                temp = toDelisle(temp);
                 break;
         }
         if(selection != 3){
@@ -112,11 +112,11 @@ document.getElementById("submitButton").onclick = function(){
         switch(selection){
             case 1:
                 temp = temp * 5/9;
-                toCelsius(temp);
+                temp = toCelsius(temp);
                 break;
             case 2:
                 temp = temp * 5/9;
-                toFahrenheit(temp);
+                temp = toFahrenheit(temp);
                 break;
             case 3:
                 temp = temp * 5/9;
@@ -126,18 +126,18 @@ document.getElementById("submitButton").onclick = function(){
                 break;
             case 5:
                 temp = temp * 5/9;
-                toRomer(temp);
+                temp = toRomer(temp);
             case 6:
                 temp = temp * 5/9;
-                toReaumur(temp);
+                temp = toReaumur(temp);
                 break;
             case 7:
                 temp = temp * 5/9;
-                toNewton(temp);
+                temp = toNewton(temp);
                 break;
             case 8:
                 temp = temp * 5/9;
-                toDelisle(temp);
+                temp = toDelisle(temp);
                 break;
         }
         if(selection != 4){
@@ -148,33 +148,33 @@ document.getElementById("submitButton").onclick = function(){
         switch(selection){
             case 1:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                toCelsius(temp); 
+                temp = toCelsius(temp); 
                 break;
             case 2:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                toFahrenheit(temp); 
+                temp = toFahrenheit(temp); 
                 break;
             case 3:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
                 break;
             case 4:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                toRankine(temp); 
+                temp = toRankine(temp); 
                 break;
             case 5:
                 doofus(temp);
                 break;
             case 6:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                toReaumur(temp); 
+                temp = toReaumur(temp); 
                 break;
             case 7:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                toNewton(temp); 
+                temp = toNewton(temp); 
                 break;
             case 8:
                 temp = (temp - 7.5) / 0.52500 + 273.15;
-                toDelisle(temp); 
+                temp = toDelisle(temp); 
                 break;
         }
         if(selection != 5){
@@ -185,33 +185,33 @@ document.getElementById("submitButton").onclick = function(){
         switch(selection){
             case 1:
                 temp = temp * 4/5 + 273.15;
-                toCelsius(temp); 
+                temp = toCelsius(temp); 
                 break;
             case 2:
                 temp = temp * 4/5 + 273.15;
-                toFahrenheit(temp); 
+                temp = toFahrenheit(temp); 
                 break;
             case 3:
                 temp = temp * 4/5 + 273.15;
                 break;
             case 4:
                 temp = temp * 4/5 + 273.15;
-                toRankine(temp); 
+                temp = toRankine(temp); 
                 break;
             case 5:
                 temp = temp * 4/5 + 273.15;
-                toRomer(temp);
+                temp = toRomer(temp);
                 break;
             case 6:
                 doofus(temp);
                 break;
             case 7:
                 temp = temp * 4/5 + 273.15;
-                toNewton(temp); 
+                temp = toNewton(temp); 
                 break;
             case 8:
                 temp = temp * 4/5 + 273.15;
-                toDelisle(temp); 
+                temp = toDelisle(temp); 
                 break;
         }
         if(selection != 6){
@@ -222,33 +222,33 @@ document.getElementById("submitButton").onclick = function(){
         switch(selection){
             case 1:
                 temp = temp * 100/33 + 273.15;
-                toCelsius(temp); 
+                temp = toCelsius(temp); 
                 break;
             case 2:
                 temp = temp * 100/33 + 273.15;
-                toFahrenheit(temp); 
+                temp = toFahrenheit(temp); 
                 break;
             case 3:
                 temp = temp * 100/33 + 273.15;
                 break;
             case 4:
                 temp = temp * 100/33 + 273.15;
-                toRankine(temp); 
+                temp = toRankine(temp); 
                 break;
             case 5:
                 temp = temp * 100/33 + 273.15;
-                toRomer(temp);
+                temp = toRomer(temp);
                 break;
             case 6:
                 temp = temp * 100/33 + 273.15;
-                toReaumur(temp); 
+                temp = toReaumur(temp); 
                 break;
             case 7:
                 doofus(temp);
                 break;
             case 8:
                 temp = temp * 100/33 + 273.15;
-                toDelisle(temp); 
+                temp = toDelisle(temp); 
                 break;
         }
         if(selection != 7){
@@ -259,22 +259,22 @@ document.getElementById("submitButton").onclick = function(){
         switch(selection){
             case 1:
                 temp = 373.15 - (temp * 2/3);
-                toCelsius(temp); 
+                temp = toCelsius(temp); 
                 break;
             case 2:
                 temp = 373.15 - (temp * 2/3);
-                toFahrenheit(temp); 
+                temp = toFahrenheit(temp); 
                 break;
             case 3:
                 temp = 373.15 - (temp * 2/3);
                 break;
             case 4:
                 temp = 373.15 - (temp * 2/3);
-                toRankine(temp); 
+                temp = toRankine(temp); 
                 break;
             case 5:
                 temp = 373.15 - (temp * 2/3);
-                toRomer(temp);
+                temp = toRomer(temp);
                 break;
             case 6:
                 temp = 373.15 - (temp * 2/3);
@@ -282,7 +282,7 @@ document.getElementById("submitButton").onclick = function(){
                 break;
             case 7:
                 temp = 373.15 - (temp * 2/3);
-                toNewton(temp); 
+                temp = toNewton(temp); 
                 break;
             case 8:
                 doofus(temp);
@@ -347,7 +347,7 @@ function getSelection(selection){
     return Number(selection);
 }
 function toCelsius(temp){
-    return temp = temp - 273.15;
+    return temp - 273.15;
 }
 function toFahrenheit(temp){
     return (temp - 273.15) * 9/5 + 32;
