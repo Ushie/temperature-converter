@@ -351,7 +351,7 @@ function getFromSelection(fromSelection){
     else if(document.getElementById("fromReaumur").checked){
         fromSelection = 6;
     }
-    else if(document.getElementById("fromtoNewton").checked){
+    else if(document.getElementById("fromNewton").checked){
         fromSelection = 7;
     }
     else{
