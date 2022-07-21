@@ -33,7 +33,7 @@ document.getElementById("submitButton").onclick = function(){
                     temp = converter.toFahrenheit(temp);
                     break;
                 case 4:    
-                    temp = converter.totoRankine(temp);
+                    temp = converter.toRankine(temp);
                     break;
                 case 5:
                     temp = converter.toRomer(temp);
