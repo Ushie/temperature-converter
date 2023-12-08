@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <label>Convert from:</label><br>
+    <input type="radio" value="celsius" name="fromUnit">
+    <label>Celsius</label><br>
+    <input type="radio" value="fahrenheit" name="fromUnit">
+    <label>Fahrenheit</label><br>
+    <input type="radio" value="kelvin" name="fromUnit">
+    <label>Kelvin</label><br>
+    <input type="radio" value="rankine" name="fromUnit">
+    <label>Rankine</label><br>
+    <input type="radio" value="romer" name="fromUnit">
+    <label>Rømer</label><br>
+    <input type="radio" value="reaumur" name="fromUnit">
+    <label>Réaumur</label><br>
+    <input type="radio" value="newton" name="fromUnit">
+    <label>Newton</label><br>
+    <input type="radio" value="delisle" name="fromUnit">
+    <label>Delisle</label><br><br>
+
+    <label>Convert to:</label><br>
+    <input type="radio" value="celsius" data-symbol="C" name="toUnit">
+    <label>Celsius</label><br>
+    <input type="radio" value="fahrenheit" data-symbol="F" name="toUnit">
+    <label>Fahrenheit</label><br>
+    <input type="radio" value="kelvin" data-symbol="K" name="toUnit">
+    <label>Kelvin</label><br>
+    <input type="radio" value="rankine" data-symbol="R" name="toUnit">
+    <label>Rankine</label><br>
+    <input type="radio" value="romer" data-symbol="Rø" name="toUnit">
+    <label>Rømer</label><br>
+    <input type="radio" value="reaumur" data-symbol="Ré" name="toUnit">
+    <label>Réaumur</label><br>
+    <input type="radio" value="newton" data-symbol="N" name="toUnit">
+    <label>Newton</label><br>
+    <input type="radio" value="delisle" data-symbol="D" name="toUnit">
+    <label>Delisle</label><br><br>
+
+    <label>Enter a temperature</label>
+    <input type="text" id="textBox">
+    <button id="submitButton">Submit</button><br>
+    <label id="result"></label>
+    <script src="index.js"></script>
+</body>
+
+</html>
