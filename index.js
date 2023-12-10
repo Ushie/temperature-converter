@@ -22,13 +22,13 @@ document.getElementById("submitButton").onclick = function () {
         reaumur: { toKelvin: temp => temp * 4 / 5 + 273.15, fromKelvin: temp => (temp - 273.15) * 0.8 },
         newton: { toKelvin: temp => temp * 100 / 33 + 273.15, fromKelvin: temp => (temp - 273.15) * 0.33000 },
         delisle: { toKelvin: temp => 373.15 - (temp * 2 / 3), fromKelvin: temp => (temp - 273.15) * 1.5000 - 100.00 },
-    }
+    };
 
     if (sourceUnit != "kelvin") temp = converter[sourceUnit].toKelvin(temp);
     if (targetUnit != "kelvin") temp = converter[targetUnit].fromKelvin(temp);
-    displayMessage(`${temp}°${targetUnitSymbol}`)
+    displayMessage(`${temp}°${targetUnitSymbol}`);
 }
 
 function displayMessage(string) {
-    document.getElementById("result").innerHTML = string
+    document.getElementById("result").innerHTML = string;
 }
